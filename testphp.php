@@ -8,7 +8,7 @@ $colquery = pg_query($db, 'SHOW COLUMNS FROM lms_user;');
   <thead>
     <?php
       while ($col = pg_fetch_array($colquery)) {
-        echo "<th>".$row['Field']"</th>"
+        echo "<th>".$row['Field']".</th>"
       }
     ?>
   </thead>
